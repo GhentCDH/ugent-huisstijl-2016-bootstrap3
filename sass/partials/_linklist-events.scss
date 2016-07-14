@@ -1,0 +1,76 @@
+//inherits from _news-aside.scss
+.linklist-events{
+  margin-bottom: 9px;
+  li {
+    position: relative;
+    display: block;
+    margin-bottom: 0;
+    a {
+      text-decoration: none;
+    }
+  }
+  .date-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 51px;
+    background-color: $white;
+    border: 2px solid $brand-secondary;
+
+    span {
+      display: block;
+      text-align: center;
+      color: $black;
+      text-transform: uppercase;
+      font-family: $default-font-family;
+      
+      &.month {
+        padding: 3px 0 0;
+        font-size: 14px;
+        margin: 0 2px;
+        line-height: 14px;
+        border-bottom: 2px solid $brand-secondary;
+        font-family: $semibold-font-family;
+      }
+      &.day {
+        padding: 2px 0 0;
+        font-size: 25px;
+      }
+    }
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      left: -2px;
+      border-bottom: 2px solid $brand-secondary;
+    }
+    &:before {
+      width: 36px;
+      bottom: -6px;
+    }
+    &:after {
+      width: 32px;
+      bottom: -10px;
+    }
+
+  }
+  
+  .content-container {
+    position: relative;
+    padding-left: 60px;
+    height: 75px;
+
+
+    .h3 {
+      color: $black;
+      font-family: $light-font-family;
+      margin-bottom: 1px;
+    }
+  }
+  @media (min-width: $screen-sm-min) {
+    margin-bottom: 15px;
+  }
+}
+
+

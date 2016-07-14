@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'PannoTextBold';
+    src: url('PannoTextBold.eot');
+    src: url('PannoTextBold.eot') format('embedded-opentype'),
+         url('PannoTextBold.woff2') format('woff2'),
+         url('PannoTextBold.woff') format('woff'),
+         url('PannoTextBold.ttf') format('truetype'),
+         url('PannoTextBold.svg#PannoTextBold') format('svg');
+}

@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'PannoTextNormal';
+    src: url('PannoTextNormal.eot');
+    src: url('PannoTextNormal.eot') format('embedded-opentype'),
+         url('PannoTextNormal.woff2') format('woff2'),
+         url('PannoTextNormal.woff') format('woff'),
+         url('PannoTextNormal.ttf') format('truetype'),
+         url('PannoTextNormal.svg#PannoTextNormal') format('svg');
+}

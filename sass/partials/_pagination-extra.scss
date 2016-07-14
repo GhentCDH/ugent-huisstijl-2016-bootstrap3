@@ -1,0 +1,11 @@
+.pagination {
+  >li {
+    >span {
+      border: 0;
+      border-radius: 0;
+      &:hover {
+        background-color: $pagination-bg;
+      }
+    }
+  }
+}
