@@ -40,6 +40,7 @@ gulp.task('vendor-javascript', () => {
       'bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js',
       'bower_components/jquery/dist/jquery.min.js',
       'bower_components/jquery/dist/jquery.min.map',
+      'bower_components/jquery-ui/ui/minified/jquery.ui.widget.min.js',
       'bower_components/jquery-migrate/jquery-migrate.min.js',
       'bower_components/jquery.tocify.js/src/javascripts/jquery.tocify.min.js',
       'bower_components/moment/min/moment.min.js',
