@@ -20,11 +20,11 @@ Use npm to install the dependencies by running `$ npm install` in the project ro
 
 #### Bower
 
-If you don't have a global version of Bower yet also run `npm install bower --global`. This allows you to run the `$ bower install` command which is required to download third party libraries needed to build the project.
+If you don't have a global version of Bower yet also run `$ (sudo) npm install bower --global`. This allows you to run the `$ bower install` command which is required to download third party libraries needed to build the project.
 
 #### Gulp
 
-If you don't have a global version of Gulp yet also run `npm install gulp gulp-cli --global`. This allows you to run the `$ gulp`
+If you don't have a global version of Gulp yet also run `$ (sudo) npm install gulp gulp-cli --global`. This allows you to run the `$ gulp`
 command which is required to build the project.
 
 ### Building
@@ -49,11 +49,11 @@ New icons can be added with Font Awesome since the complete collection is loaded
 #### Features
 
 ##### Responsive images
-Images are used responsive with [Picturefill](https://github.com/scottjehl/picturefill).
-If this is not possible (due to restrictions of the CMS for instance) you can only upload the largest version of an image which will be shown on all devices.
+Images are used responsively with [Picturefill](https://github.com/scottjehl/picturefill).
+If this is not possible (due to restrictions of the CMS for instance) you can upload only the largest version of an image which will be shown on all devices.
 
 ##### Lightbox
-Images and video's can be opened in a lightbox. You can read about it here:
+Images and videos can be opened in a lightbox. You can read about it here:
 http://ashleydw.github.io/lightbox/
 
 ##### Autosuggest
