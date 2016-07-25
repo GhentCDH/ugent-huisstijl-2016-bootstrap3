@@ -1,9 +1,0 @@
-@font-face {
-    font-family: 'PannoTextMedium';
-    src: url('PannoTextMedium.eot');
-    src: url('PannoTextMedium.eot') format('embedded-opentype'),
-         url('PannoTextMedium.woff2') format('woff2'),
-         url('PannoTextMedium.woff') format('woff'),
-         url('PannoTextMedium.ttf') format('truetype'),
-         url('PannoTextMedium.svg#PannoTextMedium') format('svg');
-}

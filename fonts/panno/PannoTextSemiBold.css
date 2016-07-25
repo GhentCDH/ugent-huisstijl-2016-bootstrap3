@@ -1,9 +1,0 @@
-@font-face {
-    font-family: 'PannoTextSemiBold';
-    src: url('PannoTextSemiBold.eot');
-    src: url('PannoTextSemiBold.eot') format('embedded-opentype'),
-         url('PannoTextSemiBold.woff2') format('woff2'),
-         url('PannoTextSemiBold.woff') format('woff'),
-         url('PannoTextSemiBold.ttf') format('truetype'),
-         url('PannoTextSemiBold.svg#PannoTextSemiBold') format('svg');
-}
