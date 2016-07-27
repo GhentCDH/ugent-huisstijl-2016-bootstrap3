@@ -1,6 +1,12 @@
 UGent-Huisstijl/websites changelog
 ==================================
 
+Version 1.0.1
+-------------
+
+- Completed static directory (moved Panno font files).
+- Removed unused iconfont files.
+
 Version 1.0.0
 -------------
 
