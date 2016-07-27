@@ -13,7 +13,7 @@ const $ = gulpLoadPlugins({pattern:[ 'gulp-', 'gulp.*', 'del']});
  */
 gulp.task(
   'clean',
-  $.del.bind(null, ['static/fonts', 'static/css', 'static/js'], {force:true})
+  $.del.bind(null, ['static/fonts/**', '!static/fonts', '!static/fonts/panno', '!static/fonts/panno/**', 'static/css', 'static/js'], {force:true})
 );
 
 /*
@@ -169,16 +169,6 @@ gulp.task('sass', ['vendor-sass'], () => {
 });
 
 /*
- * Task 'fonts':
- * Generate symlinks for own fonts.
- */
-gulp.task('fonts', () => {
-  // Panno
-  gulp.src('fonts/panno')
-  .pipe($.symlink('static/fonts/panno'));
-});
-
-/*
  * Task 'watch':
  * Run the 'sass' task if one of the own sass files is modified.
  * Run the 'uglify' task if one of the own JavaScript files is modified.
@@ -197,7 +187,6 @@ gulp.task('build', ['clean'], () => {
   gulp.start('modernizr');
   gulp.start('uglify');
   gulp.start('sass');
-  gulp.start('fonts');
 });
 
 /*
