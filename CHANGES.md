@@ -1,6 +1,12 @@
 UGent-Huisstijl/websites changelog
 ==================================
 
+Version 1.1.0
+-------------
+
+- Renamed and updated logo_ugent_en.
+- Added logos for faculty of sciences.
+
 Version 1.0.1
 -------------
 
