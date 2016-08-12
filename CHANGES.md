@@ -1,6 +1,12 @@
 UGent-Huisstijl/websites changelog
 ==================================
 
+Version 1.1.1
+-------------
+
+- Fixed logo artifacts in Firefox (#1).
+- Added further logo compression (#1).
+
 Version 1.1.0
 -------------
 
