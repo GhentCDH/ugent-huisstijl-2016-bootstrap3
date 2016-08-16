@@ -1,6 +1,11 @@
 UGent-Huisstijl/websites changelog
 ==================================
 
+Version 1.1.2
+-------------
+
+- Removed all references to Icomoon font (#2).
+
 Version 1.1.1
 -------------
 
