@@ -3,9 +3,7 @@
   position: relative;
   display: inline-block;
   &:before {
-    font-family: 'Icomoon';
     text-decoration: none;
-
   }
 }
 
@@ -62,74 +60,5 @@ a {
   &.pull-right {
     margin-right: 0;
     margin-left: 6px !important;
-  }
-}
-
-.icomoon-facebook {
-  &:before {
-    content: "\e900";
-  }
-}
-
-.icomoon-linkedin {
-  &:before {
-    content: "\e901";
-  }
-}
-
-.icomoon-pinterest {
-  &:before {
-    content: "\e902";
-  }
-}
-
-.icomoon-youtube {
-  &:before {
-    content: "\e903";
-  }
-}
-.icomoon-doc {
-  &:before {
-    content: "\e904";
-  }
-}
-.icomoon-eps {
-  &:before {
-    content: "\e905";
-  }
-}
-.icomoon-indd {
-  &:before {
-    content: "\e906";
-  }
-}
-.icomoon-pdf {
-  &:before {
-    content: "\e907";
-  }
-}
-.icomoon-photoshop {
-  &:before {
-    content: "\e908";
-  }
-}
-.icomoon-pptx {
-  &:before {
-    content: "\e909";
-  }
-}
-.icomoon-xlsx {
-  &:before {
-    content: "\e90a";
-  }
-}
-.icomoon-zip {
-  &:before {
-    content: "\e90b";
-  }
-}
-.icomoon-twitter {
-  &:before {
-    content: "\e90c";
   }
 }
