@@ -1,6 +1,11 @@
 UGent-Huisstijl/websites changelog
 ==================================
 
+Version 1.2.0
+-------------
+
+- Edited style of links in (un)ordered lists (#3).
+
 Version 1.1.2
 -------------
 
