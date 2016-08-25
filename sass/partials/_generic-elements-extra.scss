@@ -1,0 +1,13 @@
+ul, ol {
+  li {
+    a {
+      border-bottom: 1px solid transparent;
+      &:hover,
+      &:focus,
+      &.selected {
+        color: $brand-primary;
+        border-color: $brand-primary;
+      }
+    }
+  }
+}
