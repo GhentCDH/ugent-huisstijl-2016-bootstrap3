@@ -1,6 +1,11 @@
 UGent-Huisstijl/websites changelog
 ==================================
 
+Version 1.2.1
+-------------
+
+- Fixed dropdown-menu width (#4).
+
 Version 1.2.0
 -------------
 
