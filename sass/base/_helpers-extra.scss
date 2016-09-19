@@ -1,6 +1,8 @@
 $faculty_names: 'lw', 're', 'we', 'ge', 'ea', 'eb', 'di', 'pp', 'bw', 'fw', 'ps';
 
-.ugent-homepages-faculty-homepage, .ugent-homepages-department-homepage {
+.ugent-homepages-faculty-homepage,
+.ugent-homepages-department-homepage,
+.ugent-homepages-research-group-homepage {
   @for $i from 1 through length($faculties) {
     &.section-#{nth($faculty_names, $i)} {
       .content-header-subhome .padding-default {
