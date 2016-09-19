@@ -1,6 +1,11 @@
 UGent-Huisstijl/websites changelog
 ==================================
 
+Version 1.2.2
+-------------
+
+- Fixed style of links in unordered lists in subhome header (#3).
+
 Version 1.2.1
 -------------
 
