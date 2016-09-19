@@ -1,0 +1,12 @@
+.content-header-subhome {
+  li {
+    a {
+      &:hover,
+      &:focus,
+      &.selected {
+        color: $white;
+        border-color: $white;
+      }
+    }
+  }
+}
