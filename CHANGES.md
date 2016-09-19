@@ -1,6 +1,11 @@
 UGent-Huisstijl/websites changelog
 ==================================
 
+Version 1.2.3
+-------------
+
+- Fixed background color of subhome header on research group homepages (#6).
+
 Version 1.2.2
 -------------
 
