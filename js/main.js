@@ -40,7 +40,7 @@
 
         if (window_top > div_top) {
             $nav.addClass('stick');
-            if($nav.width() !== $('#nav-anchor').width()) {
+            if($nav.width() !== $('#nav-anchor').width() - 40) {
                 $nav.css({'width':$('#nav-anchor').width()});
             }
         } else {
@@ -105,7 +105,7 @@
             return $(node).text();
           }
         });
-    });    
+    });
 
     //init search-suggestions
     function substringMatcher(strs) {
