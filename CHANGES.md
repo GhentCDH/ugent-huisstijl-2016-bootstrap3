@@ -1,6 +1,13 @@
 UGent-Huisstijl/websites changelog
 ==================================
 
+Version 1.2.4
+-------------
+
+- Fixed inpage navigation width (#9).
+
+- Remove unnecessary Javascript files from example code (#7).
+
 Version 1.2.3
 -------------
 
