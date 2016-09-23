@@ -7,6 +7,13 @@
     margin-bottom: 0;
     a {
       text-decoration: none;
+
+      &:hover {
+        .h3 span {
+          color: $brand-primary;
+          border-color: $brand-primary;
+        }
+      }
     }
   }
   .date-container {

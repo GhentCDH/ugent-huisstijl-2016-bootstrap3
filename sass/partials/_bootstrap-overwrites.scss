@@ -64,4 +64,14 @@
 
 .input-group-btn:last-child > .btn, .input-group-btn:last-child > .btn-group {
   margin-left: 0;
+  min-width: 70px; // Fix known issue on Firefox 45 of button being cut off. This is fixed in later Firefox versions
+}
+
+.alert-warning {
+  $state-warning-bg: #fef5c8;
+  @include alert-variant($state-warning-bg, darken(adjust-hue($state-warning-bg, -10), 5%), $black);
+}
+
+.filter-option {
+  width: auto !important; // Fix issue on IE where the width would cause an elipsis to be shown
 }
