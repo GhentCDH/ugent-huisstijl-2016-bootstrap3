@@ -13,15 +13,13 @@
   }
   a {
     font-family: $light-font-family;
-    color: $black;
+    color: $brand-primary;
     margin-top: 0;
     margin-bottom: 0;
     line-height: 20px;
     text-decoration: none;
-    border-bottom: 1px solid transparent;
     &:hover {
-      border-color: $brand-primary;
-      color: $brand-primary;
+      border-color: transparent;
     }
   }
   li {
