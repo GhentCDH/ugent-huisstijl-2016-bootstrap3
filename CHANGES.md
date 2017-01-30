@@ -1,10 +1,12 @@
 UGent-Huisstijl/websites changelog
 ==================================
 
-Version 1.2.6
+Version 1.2.8
 -------------
 
 - Upgraded to delivery v5.0 of Fabrique (#22).
+
+- Updated static files.
 
 Version 1.2.5
 -------------
