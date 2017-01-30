@@ -82,3 +82,6 @@ $discreet-text-color: lighten($default-text-color, 40%);
 // Check icon
 $halflings-ok: "\e013";
 $check-icon: $halflings-ok;
+
+// Inpage navigation
+$zindex-inpage-nav-container: 1010;

@@ -53,6 +53,8 @@ $bs-datetimepicker-alternate-color: $brand-disabled;
     text-align: center;
     text-transform: capitalize;
     font-family: $medium-font-family;
+    color: $white;
+    padding: 5px !important;
 
     &::after {
       @extend .sr-only;
@@ -72,6 +74,13 @@ $bs-datetimepicker-alternate-color: $brand-disabled;
         width: 100%;
       }
     }
+  }
+
+  .next, .prev {
+    color: $white;
+    padding: 5px !important;
+    width: 50px !important;
+    margin: 0 !important;
   }
 
   table {
