@@ -9,7 +9,7 @@
     &.stick {
       position: fixed;
       top: 30px;
-      z-index: 10000;
+      z-index: $zindex-inpage-nav-container;
     }
 
     .linklist {

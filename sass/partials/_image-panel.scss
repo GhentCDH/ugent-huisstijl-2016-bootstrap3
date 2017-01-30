@@ -3,17 +3,9 @@
 
   .image {
     max-height: 500px;
-
-    bottom: 30px;
-    left: 0;
-    right: 0;
     display: block;
     margin: 0 auto;
     padding: 30px;
-
-    @media(min-width: $screen-sm-min) {
-      position: absolute;
-    }
   }
 
 }
