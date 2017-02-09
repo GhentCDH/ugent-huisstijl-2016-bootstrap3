@@ -5,6 +5,7 @@ Version 1.3.0
 -------------
 
 - Merge files after last Fabrique delivery (#23).
+- Fix lightbox link border-bottom (#17).
 
 Version 1.2.8
 -------------

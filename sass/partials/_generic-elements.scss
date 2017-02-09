@@ -104,6 +104,10 @@ a {
       border-color: $default-text-color;
     }
   }
+
+  &[data-type='image'] {
+    border-bottom: 0;
+  }
 }
 
 
