@@ -1,6 +1,7 @@
 .newsitem {
   img {
     width: 100%;
+    height: auto;
     display: inline-block;
     padding: 0 0 5px 0;
     @media(min-width: $screen-sm-min) {
@@ -20,4 +21,8 @@
     }
   }
 
+}
+
+.newsitem-image-container {
+  z-index: 1;
 }

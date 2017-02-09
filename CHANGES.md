@@ -1,11 +1,15 @@
 UGent-Huisstijl/websites changelog
 ==================================
 
+Version 1.3.0
+-------------
+
+- Merge files after last Fabrique delivery (#23).
+
 Version 1.2.8
 -------------
 
 - Upgraded to delivery v5.0 of Fabrique (#22).
-
 - Updated static files.
 
 Version 1.2.5
@@ -17,7 +21,6 @@ Version 1.2.4
 -------------
 
 - Fixed inpage navigation width (#9).
-
 - Remove unnecessary Javascript files from example code (#7).
 
 Version 1.2.3

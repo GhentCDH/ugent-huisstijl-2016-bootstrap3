@@ -106,7 +106,7 @@
         .dropdown-menu {
           padding: 0;
           border-radius: 0;
-          right: 0;
+          right: auto;
           left: 13px; // Items are not expected to change so we can use a left offset. If items become variable width this will no longer work
           top: 75%;
           li {

@@ -29,6 +29,7 @@
       color: $black;
     }
     &:last-of-type {
+      white-space: nowrap;
       &:after {
         content: "";
       }

@@ -77,6 +77,9 @@
 .mbottom-20 {
   margin-bottom: $margin-default-vertical-mobile;
 }
+.mbottom-large {
+  margin-bottom: $margin-large;
+}
 
 @media(min-width: $screen-sm-min) {
   .margin-default{
@@ -113,6 +116,14 @@
 
 .border-bottom {
   border-bottom: 1px solid $border-color;
+}
+
+.border-top {
+  border-top: 1px solid $border-color;
+}
+
+.border-top-invisible {
+  border-top: 1px solid transparent;
 }
 
 .ellipsis {
