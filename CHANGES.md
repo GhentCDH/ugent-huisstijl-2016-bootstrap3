@@ -8,6 +8,7 @@ Version 1.3.0
 - Fix lightbox link border-bottom (#17).
 - Fix h3 font size on homepages (#16).
 - Fix height of last button in content-text div (Safari) (#24).
+- Fix text input in search form on search and error pages (#25).
 
 Version 1.2.8
 -------------
