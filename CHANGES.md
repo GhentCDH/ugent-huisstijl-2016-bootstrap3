@@ -1,6 +1,11 @@
 UGent-Huisstijl/websites changelog
 ==================================
 
+Version 1.3.1
+-------------
+
+- Add hover colors for fa-foursquare and fa-delicious (#26).
+
 Version 1.3.0
 -------------
 
