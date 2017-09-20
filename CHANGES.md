@@ -1,6 +1,11 @@
 UGent-Huisstijl/websites changelog
 ==================================
 
+Version 1.3.2
+-------------
+
+- Update logo Faculty of Law and Criminology (PCM-944).
+
 Version 1.3.1
 -------------
 
