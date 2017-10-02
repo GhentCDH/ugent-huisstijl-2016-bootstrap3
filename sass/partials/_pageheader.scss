@@ -48,6 +48,21 @@
       }
     }
   }
+
+  //add extra styling to all span elements in lists of navbar (bootstrap only adds these to links) to be able to use linked and non-linked items in lists with same positioning
+  .navbar-nav
+     >li
+       > span {
+          position: relative;
+          display: block;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          padding-left: 10px;
+          padding-right: 10px;
+          line-height: $line-height-computed;
+       }
+
+
   .navbar-default {
     border: 0;
     background-color: transparent;
