@@ -1,0 +1,11 @@
+//Add extra padding to modal (so that it doesn't stick to the top) and space the content of the modal on the top and bottom
+//For xs and lower : fall back to bootstrap default
+@media (min-width: $screen-sm-min) {
+  .modal {
+    padding-top:15%;
+  }
+  .modal-content {
+    padding-top:15%;
+    padding-bottom: 15%;
+  }
+}
