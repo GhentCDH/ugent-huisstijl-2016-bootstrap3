@@ -18,6 +18,7 @@
 @import '../bower_components/font-awesome/scss/font-awesome';
 
 //partials
+@import 'partials/baseline';
 @import 'partials/bootstrap-select';
 @import 'partials/bootstrap-checkbox';
 @import 'partials/datepicker';
@@ -53,6 +54,7 @@
 @import 'partials/linklist-events';
 @import 'partials/linklist-news';
 @import 'partials/linklist-newsoverview';
+@import 'partials/modal';
 @import 'partials/share';
 @import 'partials/typeahead';
 @import 'partials/banner';
@@ -67,3 +69,4 @@
 @import 'partials/alert';
 @import 'partials/bootstrap-overwrites';
 @import 'partials/print-overwrites';
+@import 'partials/tooltip';
