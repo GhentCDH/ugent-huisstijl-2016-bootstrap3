@@ -1,6 +1,18 @@
 UGent-Huisstijl/websites changelog
 ==================================
 
+Version 1.4.0
+-------------
+
+- Add baseline styling (LAF-31).
+- Remove rounded corners on alerts (LAF-32).
+- Decrease vertical spacing between two top navigation lines (LAF-33).
+- Apply italic style to text in disabled buttons (LAF-34).
+- Add styling for loading modal (LAF-30).
+- Remove lightbox styling from normal modals (LAF-35).
+- Add example and styling for application header and footer (LAF-28).
+- Add tooltip styling (LAF-36).
+
 Version 1.3.2
 -------------
 
