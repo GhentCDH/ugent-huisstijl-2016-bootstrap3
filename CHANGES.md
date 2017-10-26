@@ -1,6 +1,11 @@
 UGent-Huisstijl/websites changelog
 ==================================
 
+Version 1.4.1
+-------------
+
+- Fix dropdown caret position and top nav hor padding (LAF-33).
+
 Version 1.4.0
 -------------
 
