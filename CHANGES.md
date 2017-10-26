@@ -1,6 +1,11 @@
 UGent-Huisstijl/websites changelog
 ==================================
 
+Version 1.4.2
+-------------
+
+- Undo incorrect fix for top nav hor padding (LAF-33).
+
 Version 1.4.1
 -------------
 
