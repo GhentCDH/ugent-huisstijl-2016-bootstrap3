@@ -63,6 +63,11 @@ strong {
   font-weight: normal;
 }
 
+b {
+  font-family: $medium-font-family;
+  font-weight: normal;
+}
+
 @media (min-width: $screen-xs-min){
   a[href^="tel"],
   a[href^="tel"]:hover {
