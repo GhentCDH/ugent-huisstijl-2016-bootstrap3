@@ -33,27 +33,27 @@ gulp.task('vendor-javascript', () => {
   // Files that can be copied
   gulp.src(
     [
-      'bower_components/bootstrap/dist/js/bootstrap.min.js',
-      'bower_components/bootstrap-select/dist/js/bootstrap-select.min.js',
-      'bower_components/bootstrap-select/dist/js/bootstrap-select.js.map',
-      'bower_components/ekko-lightbox/dist/ekko-lightbox.min.js',
-      'bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js',
-      'bower_components/jquery/dist/jquery.min.js',
-      'bower_components/jquery/dist/jquery.min.map',
-      'bower_components/jquery-ui/ui/minified/jquery.ui.widget.min.js',
-      'bower_components/jquery-migrate/jquery-migrate.min.js',
-      'bower_components/jquery.tocify.js/src/javascripts/jquery.tocify.min.js',
-      'bower_components/moment/min/moment.min.js',
-      'bower_components/picturefill/dist/picturefill.min.js',
-      'bower_components/smooth-scroll/dist/js/smooth-scroll.min.js',
-      'bower_components/tablesorter/jquery.tablesorter.min.js',
-      'bower_components/typeahead.js/dist/typeahead.bundle.min.js'
+      'node_modules/bootstrap/dist/js/bootstrap.min.js',
+      'node_modules/bootstrap-select/dist/js/bootstrap-select.min.js',
+      'node_modules/bootstrap-select/dist/js/bootstrap-select.js.map',
+      'node_modules/ekko-lightbox/dist/ekko-lightbox.min.js',
+      'node_modules/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js',
+      'node_modules/jquery/dist/jquery.min.js',
+      'node_modules/jquery/dist/jquery.min.map',
+      'node_modules/jquery-ui/ui/minified/jquery.ui.widget.min.js',
+      'node_modules/jquery-migrate/jquery-migrate.min.js',
+      'node_modules/jquery.tocify.js/src/javascripts/jquery.tocify.min.js',
+      'node_modules/moment/min/moment.min.js',
+      'node_modules/picturefill/dist/picturefill.min.js',
+      'node_modules/smooth-scroll/dist/js/smooth-scroll.min.js',
+      'node_modules/tablesorter/jquery.tablesorter.min.js',
+      'node_modules/typeahead.js/dist/typeahead.bundle.min.js'
     ]
   )
     .pipe(gulp.dest('static/js/vendor'));
 
   // Files that need to be placed in a specific folder
-  gulp.src('bower_components/moment/locale/nl.js')
+  gulp.src('node_modules/moment/locale/nl.js')
     .pipe($.sourcemaps.init())
     .pipe($.uglify())
     .pipe($.rename({
@@ -64,9 +64,9 @@ gulp.task('vendor-javascript', () => {
 
   // Files that need compressing
   gulp.src([
-    'bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js',
-    'bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js',
-    'bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js'
+    'node_modules/bootstrap-sass/assets/javascripts/bootstrap/collapse.js',
+    'node_modules/bootstrap-sass/assets/javascripts/bootstrap/modal.js',
+    'node_modules/bootstrap-sass/assets/javascripts/bootstrap/alert.js'
   ])
     .pipe($.sourcemaps.init())
     .pipe($.uglify())
@@ -84,12 +84,12 @@ gulp.task('vendor-javascript', () => {
 gulp.task('vendor-fonts', () => {
   // Bootstrap
   gulp.src([
-    'bower_components/bootstrap/dist/fonts/*.*'
+    'node_modules/bootstrap/dist/fonts/*.*'
   ])
     .pipe(gulp.dest('static/fonts/bootstrap'));
   // Font Awesome
   gulp.src([
-    'bower_components/font-awesome/fonts/*'
+    'node_modules/font-awesome/fonts/*'
   ])
     .pipe(gulp.dest('static/fonts/font-awesome'));
 });
@@ -103,7 +103,9 @@ gulp.task('eslint', () => {
     'gulpfile.babel.js',
     'js/*.js'
   ])
-    .pipe($.eslint())
+    .pipe($.eslint({
+      globals: [ 'SmoothScroll' ]
+     }))
     .pipe($.eslint.format())
     .pipe($.eslint.failAfterError());
 });
@@ -150,9 +152,9 @@ gulp.task('uglify', ['eslint'], () => {
  * Generate sass files from vendor stylesheet files not in sass format.
  */
 gulp.task('vendor-sass', () => {
-  gulp.src('bower_components/ekko-lightbox/ekko-lightbox.less')
+  gulp.src('node_modules/ekko-lightbox/ekko-lightbox.less')
     .pipe($.lessToScss())
-    .pipe(gulp.dest('bower_components/ekko-lightbox'));
+    .pipe(gulp.dest('node_modules/ekko-lightbox'));
 });
 
 /*
@@ -166,6 +168,29 @@ gulp.task('sass', ['vendor-sass'], () => {
     .pipe($.sass({outputStyle: 'compressed', precision: 8}).on('error', $.sass.logError))
     .pipe($.sourcemaps.write('.'))
     .pipe(gulp.dest('static/css'));
+});
+
+
+gulp.task('javascript', ['vendor-sass', 'uglify'], () => {
+  return gulp.src( [
+	'static/js/vendor/modernizr-custom.min.js',
+	'static/js/vendor/picturefill.min.js',
+	'static/js/vendor/jquery.min.js',
+	'static/js/vendor/jquery-migrate.min.js',
+	'static/js/vendor/jquery.tablesorter.min.js',
+	'static/js/vendor/typeahead.bundle.min.js',
+	'static/js/vendor/jquery.ui.widget.min.js',
+	'static/js/vendor/jquery.tocify.min.js',
+	'static/js/vendor/bootstrap.min.js',
+	'static/js/vendor/modal.min.js',
+	'static/js/vendor/bootstrap-select.min.js',
+	'static/js/vendor/moment.min.js',
+	'static/js/vendor/smooth-scroll.min.js',
+	'static/js/vendor/locale/nl.min.js',
+	'static/js/main.min.js' 
+  ])
+  .pipe( $.concat('all.min.js') )
+  .pipe( gulp.dest('static/js') )
 });
 
 /*

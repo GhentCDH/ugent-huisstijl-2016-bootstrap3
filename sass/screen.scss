@@ -7,15 +7,15 @@
 
 //vendor
 // vendor/lightbox
-@import '../bower_components/ekko-lightbox/ekko-lightbox';
+@import '../node_modules/ekko-lightbox/ekko-lightbox';
 // vendor/datepicker
-@import '../bower_components/eonasdan-bootstrap-datetimepicker/src/sass/bootstrap-datetimepicker-build';
+@import '../node_modules/eonasdan-bootstrap-datetimepicker/src/sass/bootstrap-datetimepicker-build';
 // vendor/bootstrap-select
-@import '../bower_components/bootstrap-select/sass/bootstrap-select';
+@import '../node_modules/bootstrap-select/sass/bootstrap-select';
 // vendor/bootstrap-ms (_bootstrap_custom.scss)
-@import '../bower_components/bootstrap-grid-ms/scss/bootstrap-grid-ms';
+@import '../node_modules/bootstrap-grid-ms/scss/bootstrap-grid-ms';
 // extra
-@import '../bower_components/font-awesome/scss/font-awesome';
+@import '../node_modules/font-awesome/scss/font-awesome';
 
 //partials
 @import 'partials/baseline';

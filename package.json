@@ -1,5 +1,5 @@
 {
-  "name": "huisstijl2016",
+  "name": "UGent",
   "version": "1.0.0",
   "description": "Front-end templates for UGent",
   "devDependencies": {
@@ -23,5 +23,21 @@
   },
   "engines": {
     "node": ">=0.12.7"
+  },
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "font-awesome": "^4.6.2",
+    "bootstrap-select": "^1.10.0",
+    "ekko-lightbox": "^4.0.1",
+    "moment": "^2.13.0",
+    "picturefill": "^3.0.2",
+    "typeahead.js": "^0.11.1",
+    "jquery": "~2.2.3",
+    "eonasdan-bootstrap-datetimepicker": "^4.17.37",
+    "jquery-migrate": "^1.4.0",
+    "bootstrap-grid-ms": "^3.0.0",
+    "jquery.tocify": "^1.9.1",
+    "tablesorter": "*",
+    "smooth-scroll": "^16.0.3"
   }
 }
