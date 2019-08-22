@@ -1,8 +1,8 @@
 /**
  * Created by remco on 28/10/15.
  */
- /* global $, document, window, smoothScroll */
-(function() {
+ /* globa document, window, SmoothScroll */
+(function($) {
     //init lightboxes
     $(document).delegate('*[data-toggle="lightbox"]', 'click', function (event) {
         event.preventDefault();
@@ -95,7 +95,9 @@
         $focusInput.focus();
     }
 
-    smoothScroll.init();
+    //SmoothScroll
+    var scroll = new SmoothScroll('a[href*="#"]'); // eslint-disable-line no-unused-vars
+
 
     //make table sortable
     $('.table-sortable').each(function () {
@@ -161,4 +163,4 @@
         $(this).css('height', $(this).width()*2/3);
       });
     });
-}());
+}(jQuery));
