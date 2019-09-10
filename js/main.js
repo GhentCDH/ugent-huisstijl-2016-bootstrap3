@@ -1,7 +1,7 @@
 /**
  * Created by remco on 28/10/15.
  */
- /* globa document, window, SmoothScroll */
+ /* global jQuery, document, window, SmoothScroll */
 (function($) {
     //init lightboxes
     $(document).delegate('*[data-toggle="lightbox"]', 'click', function (event) {
