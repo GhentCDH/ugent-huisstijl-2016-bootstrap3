@@ -1,6 +1,6 @@
 # UGent
 
-Static front-end templates for the UGent website based on [Bootstrap v3.3.6](http://getbootstrap.com).
+Static front-end templates for the UGent website based on [Bootstrap v3.3.7](http://getbootstrap.com).
 
 ## Usage
 
@@ -18,10 +18,6 @@ All files that are needed to apply the new styling of UGent websites are located
 
 Use npm to install the dependencies by running `$ npm install` in the project root.
 
-#### Bower
-
-If you don't have a global version of Bower yet also run `$ (sudo) npm install bower --global`. This allows you to run the `$ bower install` command which is required to download third party libraries needed to build the project.
-
 #### Gulp
 
 If you don't have a global version of Gulp yet also run `$ (sudo) npm install gulp gulp-cli --global`. This allows you to run the `$ gulp`
@@ -31,7 +27,6 @@ command which is required to build the project.
 
 To build the project the following steps need to be done:
 
-- `$ bower install` to download third libraries (only needed on the first run and when a dependency has been added, modified or removed)
 - `$ gulp` to clean the `static` directory and process the JavaScript, font and CSS files.
 - `$ gulp watch` to trigger a rebuild when any of the JavaScript or sass source files change. It is recommended to run `$ gulp` once before this command.
 
