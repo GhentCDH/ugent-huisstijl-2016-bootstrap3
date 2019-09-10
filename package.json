@@ -1,6 +1,6 @@
 {
-  "name": "UGent",
-  "version": "1.0.0",
+  "name": "huisstijl2016",
+  "version": "1.0.1",
   "description": "Front-end templates for UGent",
   "devDependencies": {
     "babel-core": "^6.22.1",
