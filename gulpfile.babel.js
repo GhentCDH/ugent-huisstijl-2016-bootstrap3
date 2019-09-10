@@ -40,13 +40,12 @@ gulp.task('vendor-javascript', () => {
       'node_modules/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js',
       'node_modules/jquery/dist/jquery.min.js',
       'node_modules/jquery/dist/jquery.min.map',
-      'node_modules/jquery-ui/ui/minified/jquery.ui.widget.min.js',
-      'node_modules/jquery-migrate/jquery-migrate.min.js',
-      'node_modules/jquery.tocify.js/src/javascripts/jquery.tocify.min.js',
+      'node_modules/jquery-migrate/dist/jquery-migrate.min.js',
+      'node_modules/jquery.tocify/src/javascripts/jquery.tocify.min.js',
       'node_modules/moment/min/moment.min.js',
       'node_modules/picturefill/dist/picturefill.min.js',
-      'node_modules/smooth-scroll/dist/js/smooth-scroll.min.js',
-      'node_modules/tablesorter/jquery.tablesorter.min.js',
+      'node_modules/smooth-scroll/dist/smooth-scroll.min.js',
+      'node_modules/tablesorter/dist/js/jquery.tablesorter.min.js',
       'node_modules/typeahead.js/dist/typeahead.bundle.min.js'
     ]
   )

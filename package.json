@@ -25,19 +25,19 @@
     "node": ">=0.12.7"
   },
   "dependencies": {
+    "bootstrap-grid-ms": "^3.0.0",
     "bootstrap-sass": "^3.3.7",
-    "font-awesome": "^4.6.2",
     "bootstrap-select": "^1.10.0",
     "ekko-lightbox": "^4.0.1",
+    "eonasdan-bootstrap-datetimepicker": "^4.17.37",
+    "font-awesome": "^4.6.2",
+    "jquery": "~2.2.3",
+    "jquery-migrate": "^1.4.0",
+    "jquery.tocify": "^1.9.1",
     "moment": "^2.13.0",
     "picturefill": "^3.0.2",
-    "typeahead.js": "^0.11.1",
-    "jquery": "~2.2.3",
-    "eonasdan-bootstrap-datetimepicker": "^4.17.37",
-    "jquery-migrate": "^1.4.0",
-    "bootstrap-grid-ms": "^3.0.0",
-    "jquery.tocify": "^1.9.1",
+    "smooth-scroll": "^16.1.0",
     "tablesorter": "*",
-    "smooth-scroll": "^16.0.3"
+    "typeahead.js": "^0.11.1"
   }
 }
