@@ -1,72 +1,41 @@
 /**
  * Created by remco on 28/10/15.
  */
- /* global jQuery, document, window, SmoothScroll */
+ /* global jQuery, window, SmoothScroll, tocbot */
 (function($) {
-    //init lightboxes
-    $(document).delegate('*[data-toggle="lightbox"]', 'click', function (event) {
-        event.preventDefault();
-        $(this).ekkoLightbox();
-    });
 
-    //init elements fixed in viewport
-    /**
-     * This part handles the highlighting functionality.
-     * We use the scroll functionality again, some array creation and
-     * manipulation, class adding and class removing, and conditional testing
-     */
-    var aChildren = $('nav[data-lockfixed="true"] li').children(); // find the a children of the list items
-    var aArray = []; // create the empty aArray
-    for (var i=0; i < aChildren.length; i++) {
-        var aChild = aChildren[i];
-        var ahref = $(aChild).attr('href');
-        aArray.push(ahref);
-    } // this for loop fills the aArray with attribute href values
+    // init page nagivation
+    if($("#toc").length){
 
-    if($('nav[data-lockfixed="true"]').length) {
-        stickNav();
-        $(window).scroll(function(){
-            stickNav();
+        // add id's to h2
+        $('#content-core h2').each( function(i) {
+            $(this).attr('id', 'anchor' + i );
         });
-        $(window).resize(function(){
-            stickNav();
+
+        // init tocbot
+        tocbot.init({
+            tocSelector: '#toc',
+            contentSelector: '#content-core',
+            headingSelector: 'h2',
+            activeLinkClass: 'nav-active',
+            listClass: 'linklist linklist-dark',
+            positionFixedSelector: 'nav[data-lockfixed="true"]',
+            positionFixedClass: 'stick',
+            fixedSidebarOffset: 200,
+            orderedList: false
         });
-    }
 
-    function stickNav () {
-        var window_top = $(window).scrollTop(); // the "12" should equal the margin-top value for nav.stick
-        var div_top = $('#nav-anchor').offset().top - 30;
-        var $nav = $('nav[data-lockfixed="true"]');
+        // fix toc width
+        $(window).on('scroll resize', function() {
+            var $nav = $('nav[data-lockfixed="true"]');
 
-        if (window_top > div_top) {
-            $nav.addClass('stick');
             if($nav.width() !== $('#nav-anchor').width() - 40) {
                 $nav.css({'width':$('#nav-anchor').width()});
             }
-        } else {
-            $nav.removeClass('stick');
-        }
-
-        var windowPos = $(window).scrollTop(); // get the offset of the window from the top of page
-        var windowHeight = $(window).height(); // get the height of the window
-        var docHeight = $(document).height();
-
-        for (var i=0; i < aArray.length; i++) {
-            var footerHeight = $('.page-footer').outerHeight();
-            var navHeight = $nav.outerHeight();
-            var navToBottom = windowHeight - navHeight;
-        }
-
-        if(windowPos + windowHeight >= docHeight - footerHeight) {
-            var footerInSight =  (windowPos + windowHeight) - (docHeight - footerHeight);
-            if(footerInSight > (navToBottom - 18)) {
-                $nav.css({'top': (navToBottom - footerInSight - 18)})
-            }else {
-                $nav.css({'top': 30})
-            }
-        }
+        });
     }
 
+    // datepicker
     $('.input-group.date').each(function () {
         $(this).datetimepicker(
             {
@@ -85,82 +54,13 @@
         );
     });
 
+    // Toggle search
     $('.pageheader .toggle-search').on('click', function () {
         $('.pageheader').toggleClass('showsearch');
         $('.pageheader #search').focus();
     });
 
-    if($('.login-page').length) {
-        var $focusInput = $('.login-page').find('input[type=text]').filter(':visible:first');
-        $focusInput.focus();
-    }
-
-    //SmoothScroll
+    // SmoothScroll
     var scroll = new SmoothScroll('a[href*="#"]'); // eslint-disable-line no-unused-vars
 
-
-    //make table sortable
-    $('.table-sortable').each(function () {
-        $(this).tablesorter({
-          dateFormat: 'uk',
-          textExtraction: function(node) {
-            return $(node).text();
-          }
-        });
-    });
-
-    //init search-suggestions
-    function substringMatcher(strs) {
-        return function findMatches(q, cb) {
-            var matches, substrRegex;
-
-            // an array that will be populated with substring matches
-            matches = [];
-            // regex used to determine if a string contains the substring `q`
-            substrRegex = new RegExp(q, 'i');
-            // iterate through the pool of strings and for any string that
-            // contains the substring `q`, add it to the `matches` array
-            $.each(strs, function (i, str) {
-                if (substrRegex.test(str)) {
-                    matches.push(str);
-                }
-            });
-            cb(matches);
-        };
-    }
-    var searchTerms = [' Letteren en Wijsbegeerte',
-        'Rechtsgeleerdheid',
-        'Wetenschappen',
-        'Geneeskunde en Gezondheidswetenschappen',
-        'Ingenieurswetenschappen en Architectuur',
-        'Economie en Bedrijfskunde',
-        'Diergeneeskunde',
-        'Psychologie en Pedagogische Wetenschappen',
-        'Bio-ingenieurswetenschappen',
-        'Farmaceutische Wetenschappen',
-        'Politieke en Sociale Wetenschappen',
-        'Homes Kantienberg',
-        'Studentenhomes Kantienberg'];
-
-
-    $('input.typeahead').each(function () {
-        $(this).typeahead({
-            hint: true,
-            highlight: true,
-            minLength: 1
-        },
-        {
-            name: 'searchTerms',
-            source: substringMatcher(searchTerms)
-        });
-    });
-
-    // correctly size slideshow image box
-    // * when all images have loaded
-    // * on viewport changes
-    $(window).on('load resize', function () {
-      $('.slider-mask').each(function () {
-        $(this).css('height', $(this).width()*2/3);
-      });
-    });
 }(jQuery));

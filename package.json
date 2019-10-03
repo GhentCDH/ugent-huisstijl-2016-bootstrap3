@@ -1,6 +1,6 @@
 {
   "name": "huisstijl2016",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Front-end templates for UGent",
   "devDependencies": {
     "babel-core": "^6.22.1",
@@ -11,7 +11,6 @@
     "gulp-babel": "^6.1.2",
     "gulp-concat": "^2.6.0",
     "gulp-eslint": "^2.0.0",
-    "gulp-less-to-scss": "0.0.4",
     "gulp-load-plugins": "^1.2.0",
     "gulp-modernizr": "^1.0.0-alpha",
     "gulp-plumber": "^1.1.0",
@@ -28,16 +27,12 @@
     "bootstrap-grid-ms": "^3.0.0",
     "bootstrap-sass": "^3.3.7",
     "bootstrap-select": "^1.10.0",
-    "ekko-lightbox": "^4.0.1",
     "eonasdan-bootstrap-datetimepicker": "^4.17.37",
     "font-awesome": "^4.6.2",
     "jquery": "~2.2.3",
     "jquery-migrate": "^1.4.0",
-    "jquery.tocify": "^1.9.1",
     "moment": "^2.13.0",
-    "picturefill": "^3.0.2",
     "smooth-scroll": "^16.1.0",
-    "tablesorter": "*",
-    "typeahead.js": "^0.11.1"
+    "tocbot": "^4.8.1"
   }
 }
