@@ -92,3 +92,18 @@
     color: $brand-primary;
   }
 }
+
+// Button Sizes
+// --------------------------------------------------
+
+.btn-sm {
+  @include button-size($padding-small-vertical, $padding-small-horizontal, $fz-default, $line-height-small, 0);
+  height: ($input-height-small + 2);
+  .caret {
+    margin-top: -8px;
+  }
+}
+
+.btn-xs {
+  @include button-size($padding-xs-vertical, $padding-xs-horizontal, $fz-default, $line-height-small, 0);
+}
