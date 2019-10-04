@@ -64,5 +64,10 @@
         content: '↓';
       }
     }
+
+    // small select
+    &.btn-sm .caret {
+      margin-top: -11px;
+    }
   }
 }
