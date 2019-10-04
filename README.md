@@ -4,7 +4,7 @@ Static front-end templates for the UGent website based on [Bootstrap v3.3.7](htt
 
 ## Usage
 
-All files that are needed to apply the new styling of UGent websites are located in the [static](static) directory. If no further development is required, it suffices to copy this directory and include the files as demonstrated in [example.html](example.html).
+All files that are needed to apply the new styling of UGent websites are located in the [static](static) directory. If no further development is required, it suffices to copy this directory and include the files as demonstrated in [example.html](examples/example.html).
 
 ## Development
 
@@ -43,24 +43,18 @@ New icons can be added with Font Awesome since the complete collection is loaded
 
 #### Features
 
-##### Responsive images
-Images are used responsively with [Picturefill](https://github.com/scottjehl/picturefill).
-If this is not possible (due to restrictions of the CMS for instance) you can upload only the largest version of an image which will be shown on all devices.
-
-##### Lightbox
-Images and videos can be opened in a lightbox. You can read about it here:
-http://ashleydw.github.io/lightbox/
-
-##### Autosuggest
-The search in the content uses autosuggest made by Typeahead:
-https://github.com/twitter/typeahead.js
-
-For demo-purpose the source is inside the main.js.
-For production the sourcefile can be a json-file.
-
 ##### Table of contents
-There are two ways to present a table of contents:
-- If the table of contents is generated at the server side, the smooth scrolling effect demonstrated on the [inpage navigation template](https://styleguide.ugent.be/dist/generic_inpage_nav_left.html) can be obtained as described on the [smooth-scroll readme page](https://github.com/cferdinandi/smooth-scroll). The initialization for this library is included in [main.js](js/main.js).
-- If the table of contents is not generated at the server side, it can be added by using the [jquery.tocify.js library](http://gregfranko.com/jquery.tocify.js/). Smooth scrolling is automatically included in this library.
 
-In both cases, the table of contents can be fixed in position by using the `data-lockfixed` attribute, as demonstrated on the [inpage navigation template](https://styleguide.ugent.be/dist/generic_inpage_nav_left.html). The JavaScript code to enable this effect is present in [main.js](js/main.js).
+A table of contents can be generated (see [examples/inpage_nav_left.html](examples/inpage_nav_left.html)). This features uses the [tocbot.js library](https://tscanlin.github.io/tocbot/). The JavaScript code to enable this effect is present in [main.js](js/main.js).
+
+To enable, add a navigation block to your page.
+
+    <aside class="col-sm-3 inpage-nav-container xs-hide">
+        <div id="nav-anchor"></div>
+        <nav role="navigation" data-lockfixed="true" class="padding-default bg-tertiary">
+            <h2>On this page</h2>
+            <div id="toc"></div>
+        </nav>
+    </aside>
+
+Make sure your page content is inside #content-core block.
