@@ -10,7 +10,7 @@ All files that are needed to apply the new styling of UGent websites are located
 
 ### Requirements
 
-- [Node 0.12+](https://nodejs.org/en/)
+- [Node v10.13+](https://nodejs.org/en/)
 
 ### Installing
 
@@ -58,3 +58,7 @@ To enable, add a navigation block to your page.
     </aside>
 
 Make sure your page content is inside #content-core block.
+
+##### Editor CSS
+
+A stripped-down css is generated for online editors (ckeditor/tinemce). An example can be found [here](examples/editor-ckeditor.html). 
