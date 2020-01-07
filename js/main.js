@@ -21,7 +21,7 @@
             listClass: 'linklist linklist-dark',
             positionFixedSelector: 'nav[data-lockfixed="true"]',
             positionFixedClass: 'stick',
-            fixedSidebarOffset: 200,
+            fixedSidebarOffset: $('nav[data-lockfixed="true"]').offset().top,
             orderedList: false
         });
 
