@@ -9,9 +9,7 @@
 
         // add id's to h2
         $('#content-core h2').each( function(i) {
-          if(!$(this).hasAttribute("id")) {
             $(this).attr('id', 'anchor' + i );
-          }
         });
 
         // init tocbot
