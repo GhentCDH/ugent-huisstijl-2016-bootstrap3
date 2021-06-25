@@ -3,6 +3,7 @@
  */
 import gulp from 'gulp';
 import gulpLoadPlugins from 'gulp-load-plugins';
+import tildeImporter from 'node-sass-tilde-importer';
 
 const $ = gulpLoadPlugins({pattern: ['gulp-', 'gulp.*', 'del']});
 
@@ -150,7 +151,7 @@ gulp.task('sass', () => {
     return gulp.src('sass/*.scss')
         .pipe($.plumber())
         .pipe($.sourcemaps.init())
-        .pipe($.sass({outputStyle: 'compressed', precision: 8}).on('error', $.sass.logError))
+        .pipe($.sass({importer: tildeImporter, outputStyle: 'compressed', precision: 8}).on('error', $.sass.logError))
         .pipe($.sourcemaps.write('.'))
         .pipe(gulp.dest('static/css'));
 });
