@@ -15,21 +15,21 @@
     "gulp-modernizr": "^1.0.0-alpha",
     "gulp-plumber": "^1.1.0",
     "gulp-rename": "^1.2.2",
-    "gulp-sass": "^3.0.0",
+    "gulp-sass": "^5.0.0",
     "gulp-sourcemaps": "^1.6.0",
     "gulp-symlink": "^2.1.4",
     "gulp-uglify": "^1.5.3",
-    "node-sass-tilde-importer": "^1.0.2"
+    "sass": "^1.77.8"
   },
   "engines": {
     "node": ">=0.12.7"
   },
   "dependencies": {
     "bootstrap-grid-ms": "^3.0.0",
-    "bootstrap-sass": "~3.3.7",
+    "bootstrap-sass": "^3.3.7",
     "bootstrap-select": "^1.10.0",
     "eonasdan-bootstrap-datetimepicker": "^4.17.37",
-    "font-awesome": "^4.6.2",
+    "font-awesome-4": "^4.6.2",
     "gulp-cli": "^2.3.0",
     "jquery": "~2.2.3",
     "jquery-migrate": "^1.4.0",
